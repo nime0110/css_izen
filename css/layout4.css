@@ -8,52 +8,64 @@ body {
 }
 .container {
   margin: 0 auto;
-  font: bold 30px black;
+  width: 1000px;
+  height: inherit;
 }
+/* CSS inherit 키워드를 사용한 속성은 부모 요소로부터 해당 속성의 계산값을 받아 사용한다.
+상속(Inheritance)은 심지어 부모 요소가 포함(containing) 블록이 아니더라도, 항상 문서 트리 내 부모 요소로부터이다 */
 /* margin: 0 auto; 넣을때 주의점!! 꼭 width값 있어야함 그래서 헤더의 container/
 div의 container / 푸터의 container 전부 width 값 넣어줌!! 
 하나라도 빠지면 안됨...   */
 
 /* header  */
 header {
-  background-color: rgb(255,255,1);
-  height: 100px;
   width: 100%;
+  height: 100px;
+  background-color: rgb(255,255,1);
 }
 header .container {
-  background-color: rgb(254,165,0);
   width: 1000px;
   height: 100px;
-  text-indent: 50px;
+  background-color: rgb(254,165,0);
+  text-indent: 100px;
+  line-height: 100px;
 }
 /* contents  */
-.contents .container {
+.contents .container{
   width: 1000px;
   height:500px;
+  background-color: white;
   text-align: center;
+  line-height: 64px;
 }
+/* .contents .container 로 지정하는 방법과 .contents 로 지정하는 방법이 있는데
+.contents .container 선택자를 사용할땐
+width값을 1000px로 맞춰줘야만 하고 (100% 안됨)
+.content를 사용할땐
+width값을 100%로 맞춰야만 함  */
 .contents .container .contents__left {
-  background-color: rgb(153,255,255);
-  width:250px;
+  width:240px;
   height:500px;
+  background-color: rgb(153,255,255);
   float: left;
 }
 .contents .container .contents__right {
-  background-color: rgb(51,153,254);
-  width: 740px;
+  width: 750px;
   height:500px;
+  background-color: rgb(51,153,254);
   float: right;
   padding-left: 0 10px;
 }
 /* footer  */
 footer {
-  background-color: rgb(0,128,1);
-  height: 100px;
   width: 100%;
+  height: 100px;
+  background-color: rgb(0,128,1);
 }
 footer .container {
-  background-color: rgb(204,255,154);
   width: 1000px;
   height: 100px;
-  text-indent: 50px;
+  background-color: rgb(204,255,154);
+  text-indent: 100px;
+  line-height: 100px;
 }
