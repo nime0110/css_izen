@@ -1,0 +1,55 @@
+@import "utf-8";
+* {
+  padding: 0px;
+  margin: 0px;
+}
+/* 사이즈 좀 잘재기!!!!!!!!!!!포토샵 그리드로 .. 정확히...  */
+body {
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+}
+header {
+  background-color: rgb(221,221,221);
+  height: 100px;
+  font: bold 40px/100px "나눔고딕";
+  text-indent: 50px;
+  width: 1000px;
+}
+.wrap {
+  height: 500px;
+  display: flex;
+  text-align: center;
+}
+/* div 따로 있어서 그냥 플롯 말고 flex함.. */
+.wrap__con-left {
+  width: 150px;
+  padding-top: 30px;
+  height: 470px;
+  background-color: rgb(185,202,255);
+  text-align: center;
+}
+/* 아니 습관적으로 height 안잡고 넘어가버리는데 이래도 되나??? 일단 잡아.... 잡아........ 짧은 코드에 집착 xx 안잡아서 다른 속성이 적용이 안되는 겨웅도잇어서..... height를 wrap의 500px로 각각 잡아줘도 되는데 걍
+백분율 %로 계산했을때 부모의 값을 기준으로 퍼센트 잡아지므로 100%라고 해둠(부모와 height값이 동일하다는 뜻)*/
+.wrap__con-center {
+  width: 700px;
+  height: 470px;
+  padding-top: 30px;
+  background-color: rgb(153,255,153);
+}
+.wrap__con-right {
+  width: 150px;
+  height: 470px;
+  padding-top: 30px;
+  background-color:rgb(255,133,56);
+}
+footer {
+  background-color: rgb(34,34,34);
+  height: 60px;
+  margin: auto;
+  color: white;
+  font-size: 18px;
+  text-indent: 50px;
+  width: 1000px;
+  line-height: 55px;
+}

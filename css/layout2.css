@@ -1,0 +1,48 @@
+@import "utf-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+/* display flex 했는데 이 대신에 #wrap에 margin:auto; 를 넣는 방식으로 중앙배열할수있음 */
+#wrap {
+  width: 980px;
+  background-color:rgb(40, 177, 231);
+  padding:10px;
+}
+/* padding 10px = 20px -  */
+header {
+  background-color: yellow;
+  height: 100px;
+  width: 100%;
+}
+#contents {
+  overflow: hidden;
+  width: 100%;
+  margin: 10px 0;
+}
+#con_left {
+  background-color:  paleturquoise;
+  width: 200px;
+  height: 500px;
+  float: left;
+}
+#con_right {
+  background-color: turquoise;
+  width: 770px;
+  height: 500px;
+  float: right;
+}
+/* 자식요소에 float을 쓰면 컨텐츠의 높이가 사라진다
+  height: 500px;으로 부모요소와 자식요소의 높이를 동일하게 하거나
+  overflow:hidden; 을 부모요소에 써주면 된다. 
+  padding값이랑 그런거 계산해서 빼가면서 width값 정하기 !! (%가 아니고 px일때!)항상 padding 값 계산하기 border일때도 마찬가지임 */
+footer {
+  background-color: yellow;
+  height: 100px;
+  width: 100%;
+  clear: both;
+}

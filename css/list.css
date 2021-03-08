@@ -1,0 +1,185 @@
+@charset "utf-8";
+* {
+  margin: 0; padding: 0;
+}
+h1 {
+  margin: 30px 0px; 
+  text-align: center;
+}
+ul {
+  list-style: none;
+  margin: 0 auto 50px;
+}
+.center {
+  width: 350px;
+  background-color: rgb(255, 186, 59);
+  font: bold 12px/35px arial;
+  border-top:2px solid black;
+  border-bottom: 2px solid black;
+}
+/* list-1 */
+.list-1 li {
+  padding-left: 30px;
+  background: url(../image/icon.gif) no-repeat 10px center;
+}
+.list-1 li:nth-child(2) {
+  border-top:1px solid black;
+  border-bottom: 1px solid black;
+}
+/* list-2 */
+.list-2 {
+  font:bold 12px/25px arial;
+}
+.list-2 li {
+  padding-left: 30px;
+  height: 25px;
+  background: url(../image/list_bg.gif) no-repeat;
+}
+.list-2 li:nth-child(2) {
+  border-top:1px solid black;
+  border-bottom: 1px solid black;
+  background-position: 0 -25px;
+}
+.list-2 li:nth-child(3) {
+  background-position: 0 -50px;
+}
+/* list-3 */
+.list-3 a{
+  text-decoration: none;
+  color: black;
+  padding-left: 30px;
+  background: url(../image/icon.gif) no-repeat 10px center;
+  /* 왼쪽에서 10px 떨어지고 상하기준에서 center로 오라는 뜻 */
+  display: block;
+}
+.list-3 a:hover {
+  background-color: greenyellow;
+  color: red;
+}
+/* list4 */
+.list-4 {
+  width: 606px;
+  /* height: 40px; */
+  overflow: hidden;
+}
+.list-4 li {
+  width: 100px;
+  float: left;
+  /* display: flex; */
+  margin-right: 1px;
+}
+.list-4 li a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-decoration: none;
+  color: black;
+  font:bold 12px/40px arial;
+  background-color: #fc0; 
+  text-align: center;
+}
+.list-4 li a:hover {
+  background-color: purple;
+  color: black;
+}
+/* list 5 */
+.list-5 {
+  width: 606px;
+  /* height: 40px; */
+  overflow: hidden;
+}
+.list-5 li {
+  width: 100px;
+  float: left;
+  /* display: flex; */
+  margin-right: 1px;
+}
+.list-5 li a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-decoration: none;
+  color: black;
+  font:bold 12px/40px arial;
+  background:  #fc0 url(../image/tab_bg.gif) no-repeat top;
+  text-align: center;
+}
+.list-5 li a:hover {
+  background: url(../image/tab_bg.gif) no-repeat bottom;
+}
+/* list 6 */
+/* xhtml 코딩 방법 - 요소에 배경이미지는 하나만 적용가능 */
+/* .list-6 {
+  width: 550px;
+  height: 40px;
+  overflow: hidden;
+}
+.list-6 li {
+  float: left;
+  margin-right: 1px;
+  background: #f9c906 url(../image/tab1_bg.gif) no-repeat left top;
+}
+.list-6 li a {
+  text-decoration: none;
+  color: #000;
+  font: bold 12px/40px arial;
+  display: block;
+  padding: 0 15px;
+  height: 40px;
+  background: url(../image/tab2_bg.gif) no-repeat right top;
+}
+.list-6 li a:hover {
+  color: #fff;
+} */
+
+/* html 5 코딩 : 하나의 요소에 여러개의 배경 적용가능 */
+/* .list-6 {
+  width: 550px;
+  height: 40px;
+  overflow: hidden;
+}
+.list-6 li {
+  float: left;
+  margin-right: 1px;
+  background-color: #f9c906;
+}
+.list-6 li a {
+  text-decoration: none;
+  color: #000;
+  font: bold 12px/40px arial;
+  display: block;
+  padding: 0 15px;
+  height: 40px;
+  background: url(../image/tab1_bg.gif) no-repeat left top,
+  url(../image/tab2_bg.gif) no-repeat right top;
+  /* no-repeat 빠짐없이 적어주기  */
+/* }
+.list-6 li a:hover {
+  color: #fff;
+} */
+
+/* html5:border-radius속성 */
+.list-6 {
+  width: 550px;
+  height: 40px;
+  overflow: hidden;
+}
+.list-6 li {
+  float: left;
+  margin-right: 1px;
+  background-color: #f9c906;
+  /* border-top-left-radius: 10%;
+  border-top-right-radius: 10%; */
+  border-radius: 10px 10px 0 0;
+}
+.list-6 li a {
+  text-decoration: none;
+  color: #000;
+  font: bold 12px/40px arial;
+  display: block;
+  padding: 0 15px;
+  height: 40px;
+}
+.list-6 li a:hover {
+  color: #fff;
+}

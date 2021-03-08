@@ -1,0 +1,33 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+#wrap {
+  width: 978px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+  /* 원래 1000px이였는데 width가로값이 패딩이 좌우로 10씩 들어가서 20/ 
+  보더가 좌우 2px 씩 들어가니까 합쳐서 22px 빼줘서 978로 다시 설정 */
+}
+#wrap #header {
+  width: 100%;
+  height: 100px;
+  background-color: yellow;
+  /* margin-bottom: 10px; */
+}
+#wrap #contents {
+  width: 100%;
+  height: 500px;
+  background-color: pink;
+  /* margin-bottom: 10px; */
+  margin: 10px 0;
+}
+/* 주석처리한거 마진바텀이 10px 중복되고 어차피 헤더에 바텀넣고 컨텐츠에 바텀넣을거면 컨텐츠 위아래에 마진값 넣는게 나으므로 margin: 10px 0; 으로
+코드를 하나로 써주었다 */
+#wrap #footer {
+  width: 100%;
+  height: 100px;
+  background-color: tomato;
+}
