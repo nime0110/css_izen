@@ -40,7 +40,7 @@ header .container {
 }
 /* .contents .container 로 지정하는 방법과 .contents 로 지정하는 방법이 있는데
 .contents .container 선택자를 사용할땐
-width값을 1000px로 맞춰줘야만 하고 (100% 안됨)
+width값을 1000px로 맞춰줘야만 하고 (100% 안됨 왜냐면 PERSENTAGE는 부모의 값을 따르는데 CONTENT의 값을 따르게 되고 CONTENTS에 내가 따로 값을 설정을 안해둬서 .... )
 .content를 사용할땐
 width값을 100%로 맞춰야만 함  */
 .contents .container .contents__left {
